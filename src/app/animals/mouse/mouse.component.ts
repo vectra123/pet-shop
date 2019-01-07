@@ -1,5 +1,6 @@
 import { IAnimal } from './../animal';
 import { Component, OnInit } from '@angular/core';
+import { IBreed } from '../breed';
 
 @Component({
   selector: 'app-mouse',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MouseComponent implements OnInit, IAnimal {
   type: string;
-  breeds: string[];
+  breeds: IBreed[];
 
   constructor() { }
 
